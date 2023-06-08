@@ -1,2 +1,17 @@
 {
+  "name": "mod1",
+  "version": "0.32.0",
+  "license": "MIT",
+  "main": "dist/lib/index.js",
+  "module": "dist/es/index.js",
+  "types": "dist/types/index.d.ts",
+  "repository": "https://github.com/keep-promise/monorepo-template/edit/main/packages/mod1",
+  "scripts": {
+    "clean": "../../node_modules/.bin/rimraf dist",
+    "build": "npm run build:es && npm run build:lib && npm run build:types && npm run build:prod",
+    "build:es": "../../node_modules/.bin/tsc --project ./tsconfig.es.json",
+    "build:lib": "../../node_modules/.bin/tsc --project ./tsconfig.lib.json",
+    "build:types": "../../node_modules/.bin/tsc --project ./tsconfig.types.json",
+    "build:prod": "../../node_modules/.bin/cross-env NODE_ENV=production ../../node_modules/.bin/webpack --config ./scripts/webpack/webpack.config.prod.js"
+  }
 }
