@@ -1,0 +1,43 @@
+{
+  "compilerOptions": {
+    "module": "es6",
+    "target": "es5",
+    "downlevelIteration": true,
+    "jsx": "react-jsx",
+    "sourceMap": true,
+    "noImplicitThis": true,
+    "noImplicitUseStrict": true,
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "pretty": true,
+    "removeComments": true,
+    "skipLibCheck": true,
+    "strictBindCallApply": true,
+    "moduleResolution": "node",
+    "allowUnreachableCode": true,
+    "experimentalDecorators": true,
+    "forceConsistentCasingInFileNames": true,
+    "importHelpers": true,
+    "importsNotUsedAsValues": "error",
+    "noImplicitAny": true,
+    "noImplicitReturns": true,
+    "strictNullChecks": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "lib": [
+      "dom",
+      "es5",
+      "es6",
+      "scripthost",
+      "webworker"
+    ],
+    "baseUrl": "packages",
+    "paths": {
+      "@mod1": [
+        "mod1/src/"
+      ],
+      "@mod2": [
+        "mod2/src/"
+      ]
+    }
+  }
+}
